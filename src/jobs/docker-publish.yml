@@ -79,7 +79,7 @@ parameters:
   docker-layer-caching:
     type: boolean
     default: false
-    description: "Should Docker Layer Caching be enabled for this executor"
+    description: "Enable Docker Layer Caching"
 
 executor:
   <<: machine
