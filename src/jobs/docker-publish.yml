@@ -82,8 +82,8 @@ parameters:
     description: "Enable Docker Layer Caching"
 
 executor:
-  <<: machine
-  docker_layer_caching: <<parameters.docker-layer-caching>>
+  name: machine
+  docker-layer-caching: <<parameters.docker-layer-caching>>
 
 environment:
   RAWTAG: <<parameters.docker-tag>>
